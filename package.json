@@ -1,0 +1,29 @@
+{
+  "name": "git-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Materials for a Git workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "reveal-md slides.md --watch --disable-auto-open --template reveal.html --theme moon --highlight-theme github-dark --css assets/fonts/iosevka-fixed.css,assets/style.css",
+    "clean": "rimraf docs",
+    "build": "cross-env npm run clean && reveal-md slides.md --featured-slide --static docs --static-dirs assets --assets-dir . --absolute-url https://xamfoo.github.io/git-workshop --template reveal.html --title 'Getting to Know Git' --theme moon --highlight-theme github-dark --css assets/fonts/iosevka-fixed.css,assets/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xamfoo/git-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xamfoo/git-workshop/issues"
+  },
+  "homepage": "https://github.com/xamfoo/git-workshop#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "puppeteer-core": "^21.0.3",
+    "reveal-md": "5.5.1",
+    "rimraf": "^5.0.1"
+  }
+}
