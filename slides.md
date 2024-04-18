@@ -1,7 +1,5 @@
 # Getting to Know Git
 
-Max Foo
-
 https://xamfoo.github.io/git-workshop
 
 ---
